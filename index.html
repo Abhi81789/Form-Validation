@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deorwine Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+    <h1 style="font-family: 'Courier New', Courier, monospace;">Welcome to Deorwine Infotech</h1>
+    <form name="myForm" onsubmit="return validateForm()">
+        <div class="formdesign" id="name">
+            Name: <input type="text" name="fname" placeholder="Enter your name" required><b><span class="formerror"> </span></b>
+        </div>
+
+        <div class="formdesign" id="dob">
+            Date of Birth: <input type="date" name="fdob" placeholder="Enter your Date of Birth" required><b><span class="formerror"> </span></b>
+        </div>
+
+        <div class="formdesign" id="email">
+            Email: <input type="email" name="femail" placeholder="Enter your email" required><b><span class="formerror"> </span></b>
+        </div>
+
+        <div class="formdesign" id="age">
+            Age: <input type="number" name="fage" placeholder="Enter your Age" required><b><span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" id="pass">
+            Password: <input type="password" name="fpass" placeholder="Enter password" required><b><span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" id="cpass">
+            Confirm Password: <input type="password" name="fcpass" placeholder="Confirm the password" required><b><span class="formerror"></span></b>
+        </div>
+
+        <div>
+            Select State - <select id="state" onchange="fun()">
+                <option value="Select">Select State</option>
+                <option value="Rajasthan"><b>Rajasthan</b></option>
+                <option value="Uttar Pradesh"><b>Uttar Pradesh</b></option>
+              </select>
+        </div>
+        <div style="margin-bottom: 25px;"> 
+            Select City - <select id="city">
+              <option></option>
+            </select>
+        </div>
+
+        <input class="but" type="submit" value="Submit">
+    </div>
+
+    </form>
+</body>
+<script src="min.js"></script>
+
+</html>
